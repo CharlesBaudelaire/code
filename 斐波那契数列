@@ -1,0 +1,15 @@
+int fib( int n ){
+int count=2;
+int sum=0;
+int i=1,x=0;
+if (n==0){sum=0;return sum;}
+if (n==1){sum=1;return sum;}
+while(count<=n){
+sum=x+i;
+x=i;
+i=sum;
+count++;
+}
+return sum;
+}
+ 
